@@ -1,0 +1,20 @@
+Package: RcmdrMisc
+Version: 2.10.1
+Date: 2026-01-03
+Encoding: UTF-8
+Title: R Commander Miscellaneous Functions
+Authors@R: c(person("John", "Fox", role = c("aut"), email = "jfox@mcmaster.ca"),
+    person("Manuel", "Munoz-Marquez", role = c("aut", "cre"), email = "manuel.munoz@uca.es"),
+    person("Robert", "Muenchen", role = "ctb"),
+    person("Dan", "Putler", role = "ctb")
+   )
+Depends: R (>= 3.5.0), utils, car (>= 3.0-0), sandwich
+Imports: abind, colorspace, Hmisc (>= 4.1-0), MASS, e1071, foreign, haven, readstata13, readxl, graphics, 
+    grDevices, stats, nortest, lattice
+Suggests: boot, datasets, carData
+ByteCompile: yes
+Description:
+  Various statistical, graphics, and data-management functions used by the Rcmdr package in the R Commander GUI for R.  
+License: GPL (>= 3)
+URL: https://cran.r-project.org/package=RcmdrMisc, https://github.com/RCmdr-Project/rcmdrmisc
+RoxygenNote: 7.3.2
