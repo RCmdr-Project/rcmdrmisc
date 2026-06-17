@@ -1,6 +1,6 @@
 Package: RcmdrMisc
-Version: 2.10.1
-Date: 2026-01-03
+Version: 2.10.2
+Date: 2026-06-16
 Encoding: UTF-8
 Title: R Commander Miscellaneous Functions
 Authors@R: c(person("John", "Fox", role = c("aut"), email = "jfox@mcmaster.ca"),
@@ -17,4 +17,4 @@ Description:
   Various statistical, graphics, and data-management functions used by the Rcmdr package in the R Commander GUI for R.  
 License: GPL (>= 3)
 URL: https://cran.r-project.org/package=RcmdrMisc, https://github.com/RCmdr-Project/rcmdrmisc
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3

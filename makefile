@@ -1,5 +1,5 @@
 package := RcmdrMisc
-version := 2.10.1
+version := 2.10.2
 R := $(wildcard pkg/R/*.R)
 Rd := $(wildcard pkg/man/*.Rd)
 

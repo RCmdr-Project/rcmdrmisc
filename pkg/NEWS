@@ -1,3 +1,7 @@
+Changes to Version 2.10.2
+
+  o Bug in cv fixed
+  
 Changes to Version 2.10.1
 
   o Move all documentation into R files for use with roxygen

@@ -9,6 +9,7 @@
 #'
 #' @param x data a numeric vector, matrix, or data frame.
 #' @param na.rm if \code{TRUE} (the default) remove \code{NA}s before computing the coefficient of variation.
+#' @param ... ignored
 #'
 #' @return \code{cv} returns the coefficient(s) of variation.
 #'
@@ -19,7 +20,7 @@
 #' print(cv(Prestige[,c("income", "education")]))
 #'
 #' @export
-cv <- function(x, na.rm=TRUE){
+cv <- function(x, na.rm=TRUE, ...){
     x <- as.matrix(x)
     if (is.numeric(x)) {
         mean <- colMeans(x, na.rm=na.rm)

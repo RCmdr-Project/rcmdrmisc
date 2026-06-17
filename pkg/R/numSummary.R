@@ -7,14 +7,14 @@
 #' @keywords misc
 #'
 #' @details
-#' \code{numSummary} creates neatly formatted tables of means, standard deviations, coefficients of variation, skewness, kurtosis, and quantiles of numeric variables. \code{CV} computes the coefficient of variation.
+#' \code{numSummary} creates neatly formatted tables of means, standard deviations, coefficients of variation, skewness, kurtosis, and quantiles of numeric variables. \code{cv} computes the coefficient of variation.
 #'
 #' @param data a numeric vector, matrix, or data frame.
 #' @param statistics any of \code{"mean"}, \code{"sd"}, \code{"se(mean)"}, \code{"var"}, \code{"cv"}, \code{"IQR"}, \code{"quantiles"}, \code{"skewness"}, or \code{"kurtosis"}, defaulting to \code{c("mean", "sd", "quantiles", "IQR")}.
 #' @param type definition to use in computing skewness and kurtosis; see the \code{\link[e1071]{skewness}} and \code{\link[e1071]{kurtosis}} functions in the \pkg{e1071} package. The default is \code{"2"}.
 #' @param quantiles quantiles to report; default is \code{c(0, 0.25, 0.5, 0.75, 1)}.
 #' @param groups optional variable, typically a factor, to be used to partition the data.
-#' @param x object of class \code{"numSummary"} to print, or for \code{CV}, a numeric vector or matrix.
+#' @param x object of class \code{"numSummary"} to print, or for \code{cv}, a numeric vector or matrix.
 #' @param \dots arguments to pass down from the print method.
 #'
 #' @return \code{numSummary} returns an object of class \code{"numSummary"} containing the table of statistics to be reported along with information on missing data, if there are any.
@@ -159,7 +159,7 @@ numSummary <- function(data,
                                                    groups, IQR, na.rm=TRUE)
             if ("cv" %in% stats)
                 table[, "cv", variable] <- tapply(data[, variable],
-                                                  groups, CV, na.rm=TRUE)
+                                                  groups, cv, na.rm=TRUE)
             if ("skewness" %in% stats)
                 table[, "skewness", variable] <- tapply(data[, variable],
                                                         groups, skewness, type=type)
